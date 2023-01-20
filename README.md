@@ -1,4 +1,4 @@
-# welcome to projects
+# welcome to R2SWAP
 this was just an css and js framework that is my college's project.
 
 # functions
