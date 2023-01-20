@@ -21,4 +21,6 @@ there are 100s of different types of precodded css/html/js codes as given below.
 3 types of position, use it by using class name "p-f", "p-a", "p-r" i.e position fixed, position relative, position absolute.
 
 # Positioning Types
-just like padding use class name "t-5" to "t-40" and for 
+just like padding use class name "t-5" to "t-40" and for left use "l" instead of "t" and for right use "r" and for bottom use "b".
+
+#
