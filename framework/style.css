@@ -40,3 +40,6 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 .pd-30{padding:30px}
 .pd-35{padding:35px}
 .pd-40{padding:40px}
+.p-f{position:fixed}
+.p-r{position:relative}
+.p-a{position:absolute}
