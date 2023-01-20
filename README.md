@@ -9,5 +9,5 @@ Enjoy using It!
 just import this repository or use javascript delevery or cdn delevery to use it.
 <style rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rahulblob/projects/framework/style.css">
 
-# Documentation
+#  Documentation
 there are 11 types of box-shadows you can youe it by using class name of "box-shadow" to change the types use "box-shadow-1" change the "1" to any number between "11"
