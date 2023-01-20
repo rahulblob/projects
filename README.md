@@ -1,5 +1,5 @@
 # welcome to R2SWAP
-this was just an css and js framework that is my college's project.
+this was just an css and js framework created by me because I don't like bootstrap buttons and inputs.
 
 # functions
 it has serval css precoded components like Box Shadow, Navbar, Toggle, ToolTip, Button, Input Styles and many more.
