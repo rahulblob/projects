@@ -6,7 +6,7 @@ it has serval css precoded components like Box Shadow, Navbar, Toggle, ToolTip, 
 Enjoy using It!
 
 # how to use?
-just import this repository or use javascript delevery or cdn delevery to use it. or simply paste the script between <head> </head> copy and paste this<style rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rahulblob/projects/framework/style.css">
+copy this link <style rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rahulblob/projects/framework/style.css"> and paste it in your HTML template.
 
 # Documentation
 there are 11 types of box-shadows you can youe it by using class name of "box-shadow" to change the types use "box-shadow-1" change the "1" to any number between "11"
