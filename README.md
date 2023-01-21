@@ -6,7 +6,7 @@ it has serval css precoded components like Box Shadow, Navbar, Toggle, ToolTip, 
 Enjoy using It!
 
 # how to use?
-copy this link <style rel="stylesheet" href='https://cdn.jsdelivr.net/gh/rahulblob/projects/framework/style.css' > and paste it in your HTML template.
+copy this link <style rel="stylesheet" href='https://cdn.jsdelivr.net/gh/rahulblob/projects/framework/styles.css' > and paste it in your HTML template.
 
 # Documentation
 there are 100s of different types of precodded css/html/js codes as given below.
