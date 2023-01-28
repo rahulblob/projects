@@ -37,6 +37,7 @@ firebase.auth().onAuthStateChanged(user=>{
 $("#LoginScreen").hide();
 $("#showLg").hide();
 $("#dashboard").show();
+$("#popupShow").show();
             showUserDetails(user)
           }else{
           }
