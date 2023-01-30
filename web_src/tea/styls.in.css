@@ -250,7 +250,7 @@ textarea:focus{
     height: 100%;
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(25px);
-    z-index: 1;
+   /* z-index: 1;*/
     display: none;
     text-align:center;
     align-items:center;
@@ -266,7 +266,7 @@ textarea:focus{
     width: 95%;
     max-width: 500px;
     border-radius: 12px;
-    z-index: 2;
+   /* z-index: 2;*/
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
