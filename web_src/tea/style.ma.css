@@ -202,7 +202,7 @@ textarea:focus{
 }
 #valP:hover{
   box-shadow:0px 0px 10px rgba(0,0,0,.1);
-  opacity:90%;
+  transform:scaleX(0.9) scaleY(0.9);
 }
 .fotter{
   text-align:center;
@@ -211,89 +211,3 @@ textarea:focus{
   color:rgba(0,0,0,.7);
 }
 .tea:before{content:"x";color:rgba(0,0,0,.2);position: relative;left:65px;}
-@-webkit-keyframes hvr-pulse-shrink {
-  to {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-}
-@keyframes hvr-pulse-shrink {
-  to {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-}
-.hvr-pulse-shrink {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.hvr-pulse-shrink:hover, .hvr-pulse-shrink:focus, .hvr-pulse-shrink:active {
-  -webkit-animation-name: hvr-pulse-shrink;
-  animation-name: hvr-pulse-shrink;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: 4;
-  animation-iteration-count: 4;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-}
-.overlay {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(25px);
-   /* z-index: 1;*/
-    display: none;
-    text-align:center;
-    align-items:center;
-    justify-content:center;
-}
-
-.popup .content {
-    /*position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);*/
-    background: #fff;
-    width: 95%;
-    max-width: 500px;
-    border-radius: 12px;
-   /* z-index: 2;*/
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-}
-
-.popup .close-btn {
-    cursor: pointer;
-    position: absolute;
-    right: 12px;
-    top: 12px;
-    width: 30px;
-    height: 30px;
-    background: #212121;
-    color: #f3f3f3;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 30px;
-    text-align: center;
-    border-radius: 50%;
-}
-
-.popup.active .overlay {
-    display: flex;
-}
-
-.popup.active .content {
-    transition: all 300ms ease-in-out;
-    transform: translate(-50%, -50%) scale(1);
-}
