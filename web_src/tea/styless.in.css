@@ -252,14 +252,16 @@ textarea:focus{
     backdrop-filter: blur(25px);
     z-index: 1;
     display: none;
-
+    text-align:center;
+    align-items:center;
+    justify-content:center;
 }
 
 .popup .content {
-    position: absolute;
+    /*position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);*/
     background: #fff;
     width: 95%;
     max-width: 500px;
@@ -288,7 +290,7 @@ textarea:focus{
 }
 
 .popup.active .overlay {
-    display: block;
+    display: flex;
 }
 
 .popup.active .content {
