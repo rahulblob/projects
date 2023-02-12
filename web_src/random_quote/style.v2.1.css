@@ -3,7 +3,7 @@ body{
   display:flex;
   align-items: center;
   justify-content: center;
-  min-height:80vh;
+  min-height:100vh;
  /* background:rgba(3, 130, 255);,1;*/
   background:url("https://i.postimg.cc/XqTLkLR6/cool-background.png") no-repeat;
   background-size: cover;
