@@ -29,8 +29,8 @@ async function updateQuote() {
 updateQuote();
 
 
-let Stitle = textarea.textContent;
-let Stect = cite1.textContent;
+let Stitle = textarea.innerText;
+let Stect = cite1.innerText;
 const shareData = {
   title: Stitle,
   text: Stect,
