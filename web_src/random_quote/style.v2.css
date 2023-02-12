@@ -4,6 +4,16 @@ body{
   align-items: center;
   justify-content: center;
   min-height:80vh;
+ /* background:rgba(3, 130, 255);,1;*/
+  background:url("https://i.postimg.cc/XqTLkLR6/cool-background.png") no-repeat;
+  background-size: cover;
+}
+blockquote::before{
+  content:"";
+  height:100px;
+  width:100px;
+  background: red;
+  border-radius:50%;
 }
 blockquote{
   float:none;
@@ -21,7 +31,6 @@ cite{
   margin-top:
 }
 .blockquote{
-  background:#fff;
   box-shadow:0px 0px 15px rgba(0,0,0,.05);
   padding:6px;
   color:rgba(0,0,0,.8);
@@ -29,7 +38,9 @@ cite{
   font-size:17px;
   font-family: 'Poppins', sans-serif;
   width:300px;
-  border:1px solid rgba(0,0,0,.1);
+  /*border:1px solid rgba(0,0,0,.1);*/
+  background:rgba(255,255,255,.5);
+  backdrop-filter:blur(2px);
 }
 .blockquote .fa-quote-left{
   font-size:40px;
@@ -40,6 +51,7 @@ cite{
 .blockquote cite{
 float:right;
   margin-top:15px;
+  color:rgba(0,0,0,.7);
 }
 .blockquote cite::before{
   content:"~";
@@ -47,7 +59,7 @@ float:right;
   color:rgba(0,0,0,.5);
 }
 .bqShare{
-  background:#fff;
+  
   margin-top:40px;
   padding:10px;
   border-top:1px solid rgba(0,0,0,.1);
@@ -82,7 +94,7 @@ float:right;
   padding:8px 16px;
   border-radius:15px;
   font-size:17px;
-  color:rgba(255,255,255,5);
+  color:#f7f7f7;
   margin-top:7px;
   background:#3061ff;
   align-items:center;
