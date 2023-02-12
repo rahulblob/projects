@@ -21,16 +21,11 @@ async function updateQuote() {
       // Update DOM elements
       textarea.textContent = data.content;
       cite1.textContent =data.author;
+
 let qAuthor = data.author;
 let qCont = data.content;
-    } else {
-      quote.textContent = "An error occured";
-      console.log(data);
-    }
-};
-updateQuote();
 
-const shareData = {
+    const shareData = {
   title: qCont,
   text: qAuthor,
   url: window.location.href
@@ -43,4 +38,11 @@ async function shareQuote(){
   // error
   }
 };
+
+    } else {
+      quote.textContent = "An error occured";
+      console.log(data);
+    }
+};
+updateQuote();
 
