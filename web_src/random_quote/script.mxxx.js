@@ -12,6 +12,23 @@ function saveQuote(){
     link.href = fileUrl;
     link.click();
 };
+
+async function updateQuote() {
+    // Fetch a random quote from the Quotable API
+    const response = await fetch("https://api.quotable.io/random");
+    const data = await response.json();
+    if (response.ok) {
+      // Update DOM elements
+      textarea.textContent = data.content;
+      cite1.textContent =data.author;
+    } else {
+      quote.textContent = "An error occured";
+      console.log(data);
+    }
+};
+updateQuote();
+
+
 let Stitle = textarea.innerHTML;
 let Stect = cite1.innerHTML;
 const shareData = {
@@ -28,19 +45,3 @@ async function shareQuote(){
   }
 };
 
-
-
-async function updateQuote() {
-    // Fetch a random quote from the Quotable API
-    const response = await fetch("https://api.quotable.io/random");
-    const data = await response.json();
-    if (response.ok) {
-      // Update DOM elements
-      textarea.textContent = data.content;
-      cite1.textContent =data.author;
-    } else {
-      quote.textContent = "An error occured";
-      console.log(data);
-    }
-};
-updateQuote();
