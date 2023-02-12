@@ -15,8 +15,8 @@ function saveQuote(){
 let Stitle = textarea.innerHTML.replace("<span","").replace("id","").replace("</span>","").replace("<cite","").replace("id","").replace("=","").replace("=","").replace("</cite>","").replace('cite1">',"").replace('Qtext">',"").replace('"',"").replace('id"','').replace('"','');
 let Stect = textarea1.innerHTML.replace("<cite>","").replace("</cite>","");
 const shareData = {
-  title: "Quotes",
-  text: textarea.innerHTML,
+  title: textarea.innerHTML,
+  text: cite1.innerHTML,
   url: window.location.href
 }
 
