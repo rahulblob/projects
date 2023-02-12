@@ -16,7 +16,7 @@ let Stitle = textarea.innerHTML.replace("<span","").replace("id","").replace("</
 let Stect = textarea1.innerHTML.replace("<cite>","").replace("</cite>","");
 const shareData = {
   title: "Quotes",
-  text: Stitle,
+  text: textarea.innerHTML,
   url: window.location.href
 }
 
