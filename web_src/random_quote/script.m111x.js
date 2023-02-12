@@ -21,6 +21,8 @@ async function updateQuote() {
       // Update DOM elements
       textarea.textContent = data.content;
       cite1.textContent =data.author;
+let qAuthor = data.author;
+let qCont = data.content;
     } else {
       quote.textContent = "An error occured";
       console.log(data);
@@ -28,12 +30,9 @@ async function updateQuote() {
 };
 updateQuote();
 
-
-let Stitle = textarea.innerText;
-let Stect = cite1.innerText;
 const shareData = {
-  title: Stitle,
-  text: Stect,
+  title: qCont,
+  text: qAuthor,
   url: window.location.href
 }
 
