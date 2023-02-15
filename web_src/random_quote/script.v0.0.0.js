@@ -1,0 +1,20 @@
+var uri = window.location.toString();if (uri.indexOf("?m=1","?m=1") > 0) {var clean_uri = uri.substring(0, uri.indexOf("?m=1"));window.history.replaceState({}, document.title, clean_uri); };
+function _0x3156(_0x4b9b4d,_0x51c698){const _0xb693f2=_0xb693();return _0x3156=function(_0x3156f9,_0x2b5c07){_0x3156f9=_0x3156f9-0xaa;let _0xf9d972=_0xb693f2[_0x3156f9];return _0xf9d972;},_0x3156(_0x4b9b4d,_0x51c698);}const _0x2339e2=_0x3156;(function(_0x2316e4,_0x4ab6e3){const _0x13c2fa=_0x3156,_0x3682f9=_0x2316e4();while(!![]){try{const _0x330d5c=-parseInt(_0x13c2fa(0xb9))/0x1+-parseInt(_0x13c2fa(0xbd))/0x2*(parseInt(_0x13c2fa(0xaa))/0x3)+parseInt(_0x13c2fa(0xab))/0x4+-parseInt(_0x13c2fa(0xc4))/0x5+parseInt(_0x13c2fa(0xc8))/0x6+parseInt(_0x13c2fa(0xb1))/0x7+parseInt(_0x13c2fa(0xb4))/0x8;if(_0x330d5c===_0x4ab6e3)break;else _0x3682f9['push'](_0x3682f9['shift']());}catch(_0x280165){_0x3682f9['push'](_0x3682f9['shift']());}}}(_0xb693,0xe278d));let saveBtn=document['querySelector']('.Bsave'),textarea=document['querySelector'](_0x2339e2(0xbb)),textarea1=document[_0x2339e2(0xb2)]('#Qtext1');const cite1=document[_0x2339e2(0xb2)](_0x2339e2(0xba));function saveQuote(){const _0x314df5=_0x2339e2,_0x250e5d=new Blob([textarea1['innerHTML'][_0x314df5(0xc0)](_0x314df5(0xc2),'')[_0x314df5(0xc0)]('id','')[_0x314df5(0xc0)]('</span>','')[_0x314df5(0xc0)](_0x314df5(0xc6),'')[_0x314df5(0xc0)]('id','')[_0x314df5(0xc0)]('=','')[_0x314df5(0xc0)]('=','')['replace'](_0x314df5(0xce),'')[_0x314df5(0xc0)]('cite1\x22>','')[_0x314df5(0xc0)]('Qtext\x22>','')['replace']('\x22','')[_0x314df5(0xc0)]('id\x22','')[_0x314df5(0xc0)]('\x22','')],{'type':_0x314df5(0xc9)}),_0x39611e=URL[_0x314df5(0xc5)](_0x250e5d),_0x2a8e08=document[_0x314df5(0xcf)]('a');_0x2a8e08[_0x314df5(0xcc)]=_0x314df5(0xac)+document[_0x314df5(0xb2)](_0x314df5(0xad))[_0x314df5(0xbc)],_0x2a8e08[_0x314df5(0xcd)]=_0x39611e,_0x2a8e08[_0x314df5(0xb0)]();};async function updateQuote(){const _0x3199c8=_0x2339e2,_0x1d5640=await fetch(_0x3199c8(0xc3)),_0x311b88=await _0x1d5640[_0x3199c8(0xca)]();_0x1d5640['ok']?(textarea['textContent']=_0x311b88[_0x3199c8(0xb8)],cite1[_0x3199c8(0xb5)]=_0x311b88['author']):(quote['textContent']=_0x3199c8(0xcb),console[_0x3199c8(0xbf)](_0x311b88));}function _0xb693(){const _0x6119f2=['3951360KWHLBy','querySelector','Copy','4923656zEMVzq','textContent','body','html','content','316777OZccDg','#cite1','#Qtext','innerHTML','5872mPIuxg','Qtext','log','replace','getElementById','<span','https://api.quotable.io/random','7372760HtVcWR','createObjectURL','<cite','#bqSve','6297516MSmzyq','txt','json','An\x20error\x20occured','download','href','</cite>','createElement','remove','99LzylKI','2345292LtxEbb','Quote\x20By\x20-\x20','cite','textarea','<i\x20class=\x22fa\x20fa-check\x22\x20aria-hidden=\x22true\x22></i>\x20done','click'];_0xb693=function(){return _0x6119f2;};return _0xb693();};updateQuote();function copyQuote(_0x31a7fb){const _0x273e85=_0x2339e2;var _0x3cb7c5=document[_0x273e85(0xc1)](_0x273e85(0xbe)),_0x40105a=document['createElement'](_0x273e85(0xae));_0x40105a['value']=_0x3cb7c5[_0x273e85(0xb5)],document[_0x273e85(0xb6)]['appendChild'](_0x40105a),_0x40105a['select'](),document['execCommand'](_0x273e85(0xb3)),_0x40105a[_0x273e85(0xd0)](),$(_0x273e85(0xc7))[_0x273e85(0xb7)](_0x273e85(0xaf));}setInterval(updateQuote,0x2710);
+if(window.location.href != "https://quotes.blogging375.eu.org/"){alert("invalid licence key!");window.location.href = "https://quotes.blogging375.eu.org/"}
+const share = e => {
+  let qText = document.querySelector("#Qtext").innerHTML;
+  let qCite = document.querySelector("#cite1").innerHTML;
+  if (navigator.share) {
+    navigator
+      .share({
+        title: "Quote",
+        text: qText + " " + `\n ~ ` + qCite + `\n\n\ for more.. \n`,
+        url: "https://bit.ly/3I2cAd9"
+      })
+      .then(() => console.log("thanks for share"))
+      .catch(error => console.log("error", error));
+  }
+};
+if(!navigator.share) {
+}
+document.querySelector("#bqShare").addEventListener("click", share);
