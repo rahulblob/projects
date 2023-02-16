@@ -3,12 +3,12 @@ $("#download").click(function(){
 navigator.clipboard.writeText(document.querySelector("img").src);
 $("#download").html("copyed direct link!");setTimeout(function(){$("#download").html("share");$(".m0").click();},1500);});
 
-    const fileInput = document.querySelector("#imgs").src;
+    const fileInput = document.querySelector("#imgs");
 let downloadBtn = document.querySelector("#button");
 downloadBtn.addEventListener("click", e => {
     e.preventDefault();
     downloadBtn.innerText = "Downloading file...";
-    fetchFile(fileInput);
+    fetchFile(fileInput.src);
 });
 function fetchFile(url) {
     fetch(url).then(res => res.blob()).then(file => {
