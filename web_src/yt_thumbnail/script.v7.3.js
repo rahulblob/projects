@@ -3,6 +3,7 @@ let a= document.createElement('a');
 a.target= '_blank';
 a.href= imgTag.src;
 a.click();
+a.download = "yt_thumbnail";
 toast("success!");
 });
 $("#download").click(function(){
