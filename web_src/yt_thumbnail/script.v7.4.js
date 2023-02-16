@@ -2,8 +2,8 @@ $("form").submit(function(e){e.preventDefault();$(".m0").fadeIn(500);$("#down").
 let a= document.createElement('a');
 a.target= '_blank';
 a.href= imgTag.src;
+a.setAttribute('download', "thumbnail");
 a.click();
-a.download = "yt_thumbnail";
 toast("success!");
 });
 $("#download").click(function(){
