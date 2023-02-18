@@ -5,3 +5,6 @@ document.querySelector(".teaS span").style = 'margin-right:3px;';
 $(".teaS").hover(function(){
   this.style.transform = "scale(0.97)";
 });
+$("body").hover(function(){
+  document.querySelector(".teaS").style.transform = "";
+});
